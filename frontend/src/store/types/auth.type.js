@@ -1,0 +1,4 @@
+export const AUTH = {
+  SET_TOKEN: 'SET_TOKEN',
+  SET_AUTH_ERROR: 'SET_AUTH_ERROR',
+}

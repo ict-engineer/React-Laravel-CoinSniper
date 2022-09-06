@@ -1,0 +1,336 @@
+@import-normalize ;
+
+@import 'tailwind-base.css';
+
+body.no-animate *,
+body.no-animate *::before,
+body.no-animate *::after {
+  transition: none !important;
+  animation: none !important;
+}
+
+html {
+  font-size: 100%;
+  font-family: Muli, Roboto, Helvetica Neue, Arial, sans-serif;
+  background-color: #0b1621;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  margin: 0;
+}
+
+h1,
+.h1 {
+  font-size: 24px;
+}
+
+h2,
+.h2 {
+  font-size: 20px;
+}
+
+h3,
+.h3 {
+  font-size: 16px;
+}
+
+h4,
+.h4 {
+  font-size: 15px;
+}
+
+h5,
+.h5 {
+  font-size: 13px;
+}
+
+h6,
+.h6 {
+  font-size: 12px;
+}
+
+.ps>.ps__rail-y,
+.ps>.ps__rail-x {
+  z-index: 99;
+}
+
+a[role=button] {
+  text-decoration: none;
+}
+
+[role="tooltip"] {
+  z-index: 9999;
+}
+
+a {
+  color: lightgreen;
+}
+
+#loadingDiv {
+  background-color: #0b1621;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  z-index: 99999;
+}
+
+
+@media only screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+    border-radius: 5px;
+  }
+}
+
+*/ form label {
+  z-index: 99;
+}
+
+@keyframes autofill {
+
+  0%,
+  100% {
+    background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  animation-delay: 1s;
+  animation-name: autofill !important;
+  animation-fill-mode: both;
+  -webkit-box-shadow: 0 0 0 100px transparent inset !important;
+}
+
+:focus {
+  outline-color: transparent;
+}
+
+.makeStyles-appBar-5 {
+  box-shadow: none !important;
+}
+
+.MuiPopover-paper {
+  background-color: #1a2655 !important;
+}
+
+.MuiListItem-button:hover {
+  background-color: #273157 !important;
+}
+
+.MuiButton-root {
+  color: white !important;
+}
+
+.MuiListItemIcon-root {
+  color: white !important;
+}
+
+.MuiListItemText-root {
+  color: white !important;
+}
+
+.MuiListItemIcon-root {
+  min-width: 2rem !important;
+}
+
+#footer a:hover {
+  color: white;
+}
+
+#footer a {
+  color: #b2b9d4;
+}
+
+#footer p {
+  color: #b2b9d4;
+}
+
+.boader-b-1:hover {
+  border-bottom-width: 1px;
+}
+
+.text-c-7 {
+  font-size: 0.7rem;
+}
+
+@media (min-width: 600px) {
+  .text-c-7 {
+    font-size: 1rem;
+  }
+}
+
+.primary-btn {
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline-block;
+  color: #fff;
+  border: 0px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background-image: -webkit-gradient(linear, right top, left top, from(#04AA6D), to(#d2273c));
+  background-image: -webkit-linear-gradient(right, #04AA6D, #15af77);
+  background-image: -o-linear-gradient(right, #04AA6D, #15af77);
+  background-image: linear-gradient(to left, #04AA6D, #15af77);
+}
+
+.primary-btn:disabled {
+  background-image: -webkit-gradient(linear, right top, left top, from(gray), to(gray));
+  cursor: not-allowed;
+}
+
+button:hover {
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.primary-btn:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#04AA6D), to(#d2273c));
+  background-image: -webkit-linear-gradient(left, #04AA6D, #15af77);
+  background-image: -o-linear-gradient(left, #04AA6D, #15af77);
+  background-image: linear-gradient(to right, #04AA6D, #15af77);
+  color: #fff;
+}
+
+.main-boader {
+  border: 1px solid #456b6a;
+}
+
+.bg-yellow-custom {
+  background-color: #d9b300;
+}
+
+.bg-tab-btn {
+  background-color: #456b6a;
+}
+
+.coin-tab-btn {
+  text-transform: uppercase;
+  border: 1px solid #456b6a;
+  width: 6.5rem;
+}
+
+.coin-tab-btn:hover {
+  background-color: #456b6a;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.MuiTableSortLabel-root.MuiTableSortLabel-active {
+  color: white !important;
+}
+
+.MuiTableSortLabel-root.MuiTableSortLabel-active.MuiTableSortLabel-root.MuiTableSortLabel-active .MuiTableSortLabel-icon {
+  color: rgba(255, 255, 255, 0.54) !important;
+  opacity: 1;
+}
+
+.MuiTableSortLabel-root:hover {
+  color: rgba(255, 255, 255, 0.54) !important;
+}
+
+.MuiTablePagination-caption {
+  color: white !important;
+  font-size: 1.2rem !important;
+}
+
+.MuiTablePagination-actions {
+  color: white !important;
+  font-size: 1.2rem !important;
+}
+
+.MuiIconButton-root.Mui-disabled {
+  color: rgba(255, 255, 255, 0.26) !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  opacity: 0.6;
+  filter: invert(0.8);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1
+}
+
+.crop-hover {
+  display: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.crop-hover:hover {
+  display: block;
+}
+
+.crop-image:hover~.crop-hover {
+  display: block;
+}
+
+/* td {
+  color: white !important;
+  font-size: 1rem !important;
+  border-bottom: 0px solid white !important;
+}
+
+tr:nth-child(even) {
+  background: #2d3952
+}
+
+tr:nth-child(odd) {
+  background: #3c4e77
+}
+
+tr:hover {
+  background-color: #232d3b !important;
+}
+
+th {
+  background-color: rgb(29, 28, 28) !important;
+  color: white !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  font-weight: 900 !important;
+} */
+@import 'print.css';
+
+@import 'tables.css';
+
+@import 'prism.css';
+
+@import 'tailwind.css';
